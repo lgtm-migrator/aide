@@ -30,5 +30,5 @@ target_link_libraries(
 target_compile_features(AideApplication PUBLIC cxx_std_17)
 
 target_compile_definitions(
-  AideApplication PUBLIC SPDLOG_ACTIVE_LEVEL=SPDLOG_LEVEL_TRACE
+  AideApplication PUBLIC SPDLOG_ACTIVE_LEVEL=${AIDE_LOG_LEVEL}
 )
